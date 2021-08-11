@@ -32,7 +32,7 @@ public class ReviewController {
                 Review review = result.get();
                 model.addAttribute("title", "Reviews for: " + review.getRestaurantName());
                 model.addAttribute("reviews", review.getId());
-                //should I include IDs for the restaurants as well?//
+
             }
         }
     }
