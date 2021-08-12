@@ -5,10 +5,10 @@ import org.launchcode.Secretrestaurantreview.Models.Review;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.validation.Errors;
+import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.Optional;
 
 @Controller
@@ -35,6 +35,28 @@ public class ReviewController {
 
             }
         }
+        return "review/index";
+    }
+
+    //lives at /review/create
+    @GetMapping("create")
+    public String renderCreateReviewForm(Model model){
+        model.addAttribute("title", "Create Review");
+        model.addAttribute(new Review());
+
+        return "review/create";
+    }
+
+    @PostMapping("create")
+    public String processCreateReviewForm(@ModelAttribute @Valid Review newReview,
+                                         Errors errors, Model model){
+        if (errors.hasErrors()){
+            model.addAttribute("title", "Create Review");
+            return "review/create";
+        }
+
+        reviewRepository.save(newReview);
+        return "redirect:";
     }
 }
 
