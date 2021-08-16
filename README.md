@@ -17,3 +17,6 @@ This app is designed to facilitate restuarant reviews. A restaurant owner can re
 ![Ticket when opened by the reviewer](https://github.com/LaunchCodeLiftoffProjects/miguel-group-a/blob/main/5.jpg "Ticket when opened by the reviewer")
 ### Review form
 ![Review form](https://github.com/LaunchCodeLiftoffProjects/miguel-group-a/blob/main/6.jpg "Review form")
+
+## Project Management
+This project is being managed using a Trello board at https://trello.com/b/cSgoojaL/matthews-project-board.
