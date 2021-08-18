@@ -1,7 +1,7 @@
-package org.launchcode.Secretrestaurantreview.Controllers;
+package org.launchcode.Secretrestaurantreview.controllers;
 
-import org.launchcode.Secretrestaurantreview.Data.ReviewRepository;
-import org.launchcode.Secretrestaurantreview.Models.Review;
+import org.launchcode.Secretrestaurantreview.data.ReviewRepository;
+import org.launchcode.Secretrestaurantreview.models.Review;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

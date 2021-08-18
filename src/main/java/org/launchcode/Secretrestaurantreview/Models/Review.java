@@ -1,23 +1,19 @@
-package org.launchcode.Secretrestaurantreview.Models;
+package org.launchcode.Secretrestaurantreview.models;
 
-public class Review {
 
-    private int id;
-    private static int nextId = 1;
+import javax.persistence.Entity;
+
+@Entity
+public class Review extends org.launchcode.Secretrestaurantreview.models.AbstractEntity {
 
     private String restaurantName;
 
     public Review (String restaurantName){
         this.restaurantName = restaurantName;
-        this.id = nextId;
-        nextId++;
     }
 
     public Review (){}
 
-    public int getId() {
-        return id;
-    }
 
     public String getRestaurantName() {
         return restaurantName;
