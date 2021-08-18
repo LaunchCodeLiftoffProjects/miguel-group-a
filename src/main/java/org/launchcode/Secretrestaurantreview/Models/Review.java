@@ -4,7 +4,7 @@ package org.launchcode.Secretrestaurantreview.models;
 import javax.persistence.Entity;
 
 @Entity
-public class Review extends org.launchcode.Secretrestaurantreview.models.AbstractEntity {
+public class Review extends AbstractEntity{
 
     private String restaurantName;
 
