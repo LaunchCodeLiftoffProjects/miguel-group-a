@@ -1,6 +1,6 @@
-package org.launchcode.Secretrestaurantreview.data;
+package org.launchcode.Secretrestaurantreview.Data;
 
-import org.launchcode.Secretrestaurantreview.models.Review;
+import org.launchcode.Secretrestaurantreview.Models.Review;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

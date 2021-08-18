@@ -1,4 +1,4 @@
-package org.launchcode.Secretrestaurantreview.models;
+package org.launchcode.Secretrestaurantreview.Models;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
