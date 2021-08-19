@@ -2,6 +2,9 @@ package org.launchcode.Secretrestaurantreview.Models;
 
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
 public class Review extends AbstractEntity{
@@ -13,7 +16,6 @@ public class Review extends AbstractEntity{
     }
 
     public Review (){}
-
 
     public String getRestaurantName() {
         return restaurantName;
