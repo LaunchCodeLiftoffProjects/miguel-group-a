@@ -11,4 +11,6 @@ public class Role extends AbstractEntity{
         super(name);
     }
 
+    public Role() {
+    }
 }

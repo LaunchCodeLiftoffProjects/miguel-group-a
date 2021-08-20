@@ -35,7 +35,8 @@ public class User extends AbstractEntity{
         this.roles = roles;
     }
 
-
+    public User() {
+    }
 
     public String getFirstName() {
         return firstName;
